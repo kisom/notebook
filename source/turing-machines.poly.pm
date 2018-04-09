@@ -2,93 +2,74 @@
 
 ◊h1{Turing machines}
 
-◊p{One of the foundations of modern computing is the Turing Machine, but
-embarassingly, I had only a vague understanding of the topic. I
-recently subscribed to ◊(link "https://destroyallsoftware.com/"
-"Destroy All Software"), and starting on the computation series.}
+◊section{◊p{◊newthought{One of the foundations} of modern computing is
+the Turing Machine◊margin-note{See the Stanford Encyclopedia of
+Philosphy's
 
-◊h2{Introduction}
+◊(link "https://plato.stanford.edu/entries/turing-machine/" "article on Turing machines")
 
-◊p{One of the motivations behind the Turing Machine is exploring the
-limits of computation via the halting problem:}
+for an introduction, too.}, but embarassingly, I had only a vague
+understanding of the topic. I recently subscribed to ◊(link
+"https://destroyallsoftware.com/" "Destroy All Software"), and
+starting on the computation series.}}
 
-◊pre{
-halt :: function → bool
-}
+◊section{◊h2{Introduction}
 
-◊p{The question is: does ◊code{function} always return? This is an
-undecidable problem.}
+◊p{◊newthought{One of the motivations} behind the Turing Machine is
+exploring the limits of computation via the halting problem: can we
+write a function ◊code{halt} that takes a function as an argument and
+returns ◊em{true} if the function eventually halts? It turns out that
+this is an unsolvable problem.}
 
-◊p{The Chomsky hierarchy:
-◊ol{
-◊li{Regular expressions}
-◊li{Simple programming languages}
-◊li{Complex programming languages}
-◊li{Turing equivalence}
-}}
+◊section{
 
 ◊h2{Computing by changing}
 
-Imperative model of computation: order of instructions matters, and generally
-destructive operations.
+◊p{◊newthought{Under the imperative model of computation},
+the machine executes an ordered sequence of instructions. The order of
+instructions matters, and operations are generally destructive - they
+modify memory in place.}
 
-Turing machine:
+◊p{
+Fundamentally, a Turing machine is simple. It has four elements:
+◊margin-note{Note that a Turing Machine is a type of state machine.}
 
-* infinite tape composed of cells, initialisation is the blank symbol ('B')
-* head pointing to a cell on the tape
-* instructions: head movement, read, write
+◊ul{
 
-Example machine: X_B
+◊li{An ◊em{infinite tape} that is composed of cells, each of which
+contains either the blank symbol (by convention, ◊em{B} is used).}
 
-two-cell tape:
+◊li{A ◊em{tape head}, which points to the current cell in the
+tape. The head must be moved during each state transition.}
 
-```
-BB
-^
-```
+◊li{The ◊em{state transition table}. Entries are defined by the tuple
+(◊em{symbol, state}), and contain the tuple (◊em{write symbol, head
+direction, next state}).}
 
-rewrite first cell with X->B repeatedly: when we see a B, write an X. When we see an X, write a B.
-head has to move on every single instruction, only one step
-we'll move to the right
-cell 2: read B, see B, move left
+◊li{The ◊em{current state}, as defined by the state table.}}
 
-ex:
+◊p{A minimal Turing machine can be written in four lines of
+Python. Along with a corresponding state table, a complete program is
+shown below. ◊margin-note{Note to self: replace this with a Racket
+version.}  ◊margin-note{For simplicity, several things have been
+hardcoded in this implementation, namely the tape size, the starting
+state, and the number of iterations.}}
 
-BB
-^
-XB
- ^
-XB
-^
-BB
- ^
+◊pre['((class "code"))]{
+# toggle the first cell between 'X' and blank.
+X_B = {
+       ('B', 's1'): ('X', 'R', 's2'),
+       ('B', 's2'): ('B', 'L', 's3'),
+       ('X', 's3'): ('B', 'R', 's4'),
+       ('B', 's4'): ('B', 'L', 's1')
+}
 
-Turing machines aren't imperatively organised; it uses a state table.
-state symbols:
-s_1...s_4
-
-(symbol, state) -> write, head move, next state
-B, s1 -> X, R, s2
-B, s2 -> B, L, s3
-X, s3 -> B, R, s4 
-B, s4 -> B, L, s1
-
-a state table and four-line turing machine:
-
-	X_B = {
-		('B', 's1'): ('X', 'R', 's2'),
-		('B', 's2'): ('B', 'L', 's3'),
-		('X', 's3'): ('B', 'R', 's4'),
-		('B', 's4'): ('B', 'L', 's1')
-	}
-
-	def simulate(instructions):
-		tape, head, state = ['B', 'B'], 0, 's1'
-		for _ in range(8):
-			(tape[head], head_dir, state) = instructions[(tape[head], state)]
-			head += 1 if head_dir == 'R' else -1
-
-	simulate(X_B)
-
+def simulate(instructions):
+    tape, head, state = ['B', 'B'], 0, 's1'
+    for _ in range(8):
+        (tape[head], head_dir, state) = instructions[(tape[head], state)]
+        head += 1 if head_dir == 'R' else -1
+}
+}}}
 
 ◊p{Last updated on 2018-04-08.}

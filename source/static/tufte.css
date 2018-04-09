@@ -27,6 +27,92 @@
              font-weight: normal;
              font-style: normal; }
 
+@font-face {
+    font-family: 'Concourse';
+    src: url('fonts/concourse_t3_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Concourse';
+    src: url('fonts/concourse_t3_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Concourse';
+    src: url('fonts/concourse_t3_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Concourse';
+    src: url('fonts/concourse_t3_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Concourse SC';
+    src: url('fonts/concourse_c3_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Concourse SC';
+    src: url('fonts/concourse_c3_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Triplicate';
+    src: url('fonts/triplicate_t4_code_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Triplicate';
+    src: url('fonts/triplicate_t4_code_bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Triplicate';
+    src: url('fonts/triplicate_t4_code_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'Equity';
+    src: url('fonts/equity_text_a_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Equity SC';
+    src: url('fonts/equity_caps_a_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Tufte CSS styles */
 html { font-size: 15px; }
 
@@ -34,7 +120,7 @@ body { width: 87.5%;
        margin-left: auto;
        margin-right: auto;
        padding-left: 12.5%;
-       font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+       font-family: Equity, et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
        background-color: #fffff8;
        color: #111;
        max-width: 1400px;
@@ -85,8 +171,8 @@ article { position: relative;
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
 
-p, ol, ul { font-size: 1.4rem;
-            line-height: 2rem; }
+p, ol, ul { font-size: 1.8rem;
+            line-height: 2.4rem; }
 
 p { margin-top: 1.4rem;
     margin-bottom: 1.4rem;
@@ -206,9 +292,9 @@ div.table-wrapper { overflow-x: auto;
 .sans { font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
         letter-spacing: .03em; }
 
-code { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-       font-size: 1.0rem;
-       line-height: 1.42; }
+code { font-family: Triplicate, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+       font-size: 1.4
+       line-height: 1.62; }
 
 .sans > code { font-size: 1.2rem; }
 
@@ -216,7 +302,8 @@ h1 > code, h2 > code, h3 > code { font-size: 0.80em; }
 
 .marginnote > code, .sidenote > code { font-size: 1rem; }
 
-pre.code { font-size: 0.9rem;
+pre.code { font-family: Triplicate, monospace;
+           font-size: 0.9rem;
            width: 52.5%;
            margin-left: 2.5%;
            overflow-x: auto; }
