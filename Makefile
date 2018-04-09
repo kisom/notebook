@@ -5,11 +5,12 @@ all: build
 sync: build deploy
 
 build:
-	raco pollen render
-	raco pollen publish
+	raco pollen render source
+	mkdir -p publish
+	raco pollen publish source publish
 
 deploy:
-	rsync --progress -auv ./ $(UPSTREAM)
+	rsync --progress -auv ./publish/ $(UPSTREAM)
 
 setup:
 	raco pkg install --auto pollen libuuid
