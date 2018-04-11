@@ -2,14 +2,19 @@
 
 ◊h1{Turing machines}
 
+◊blockquote{◊p{◊em{We are now in a position to show that the
+Entscheidungsproblem cannot be solved.}}
+
+◊footer{A.M. Turing, ◊em{◊(link "https://www.cs.cmu.edu/~15251/notes/turing.pdf" "On Computable Numbers, With an Application to
+the Entscheidungsproblem")}.}}
+
 ◊section{◊p{◊newthought{One of the foundations} of modern computing is
 the Turing Machine◊margin-note{See the Stanford Encyclopedia of
-Philosphy's
-
-◊(link "https://plato.stanford.edu/entries/turing-machine/" "article on Turing machines")
-
-for an introduction, too.}, but embarassingly, I had only a vague
-understanding of the topic. I recently subscribed to ◊(link
+Philosphy's ◊(link
+"https://plato.stanford.edu/entries/turing-machine/" "article on
+Turing machines") for a more thorough introduction and background,
+too.}, but embarassingly, I had only a vague understanding of the
+topic. I recently subscribed to ◊(link
 "https://destroyallsoftware.com/" "Destroy All Software"), and
 starting on the computation series.}}
 
@@ -76,4 +81,4 @@ def simulate(instructions):
 
 }}
 
-◊p{Last updated on 2018-04-08.}
+◊p{Last updated on 2018-04-11.}

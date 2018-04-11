@@ -85,3 +85,23 @@
   (case (current-poly-target)
     [(ltx pdf) `(txt "\\newthought{" ,@words "}")]
     [else `(span [[class "newthought"]] ,@words)]))
+
+(define (blockquote . words)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt "\\begin{quote}" ,@words "\\end{quote}")]
+    [else `(blockquote ,@words)]))
+
+(define (smallcaps . words)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt "\\smallcaps{" ,@words "}")]
+    [else `(span [[class "smallcaps"]] ,@words)]))
+
+(define (∆ . elems)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt-noescape "$" ,@elems "$")]
+    [else `(span "\\(" ,@elems "\\)")]))
+
+(define (center . words)
+  (case (current-poly-target)
+    [(ltx pdf) `(txt "\\begin{center}" ,@words "\\end{center}")]
+    [else `(div [[style "text-align: center"]] ,@words)]))
