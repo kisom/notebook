@@ -1,15 +1,16 @@
 #lang racket/base
 
-(require pollen/decode
-         pollen/setup
+(require libuuid
+         pollen/core
+         pollen/decode
          pollen/file
-         txexpr
+         pollen/pagetree
+         pollen/setup
          pollen/tag
          pollen/template
-         pollen/core
-         pollen/pagetree
+         pollen/unstable/typography
          racket/date
-         libuuid)
+         txexpr)
 
 (provide (all-defined-out))
 

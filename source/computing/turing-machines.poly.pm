@@ -70,6 +70,10 @@ def simulate(instructions):
         (tape[head], head_dir, state) = instructions[(tape[head], state)]
         head += 1 if head_dir == 'R' else -1
 }
-}}}
+}}
+
+◊p{
+
+}}
 
 ◊p{Last updated on 2018-04-08.}

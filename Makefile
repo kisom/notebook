@@ -5,7 +5,7 @@ all: build
 sync: build deploy
 
 build:
-	raco pollen render source
+	raco pollen render -r source
 	mkdir -p publish
 	raco pollen publish source publish
 
