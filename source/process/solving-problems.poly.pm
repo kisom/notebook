@@ -27,10 +27,13 @@ its performance.}
 ◊section{
 ◊h2{How to solve any problem}
 
-◊p{◊newthought{How to solve it} is the name of a book by G. Polya that
-describes an approach for solving any problem. Thought it's
-mathematically focused, it applies well to other domains. The steps
-for solving problems outlined here are thus:
+◊p{◊newthought{How to solve it} is the name of a book by ◊(link
+"https://press.princeton.edu/titles/669.html" "G. Pólya")
+◊margin-note{Pólya, G. and Conway, J. (2014). ◊em{How to solve
+it}. Princeton, NJ: Princeton University Press.} that describes an
+approach for solving any problem. Thought it's mathematically focused,
+it applies well to other domains. The steps for solving problems
+outlined here are thus:
 
 ◊ol{
   ◊li{Understand the problem}
@@ -62,4 +65,4 @@ for solving problems outlined here are thus:
   ◊li{Retrospective}
   ◊ol{
     ◊li{Does the solution fit the problem?}
-    ◊li{What are the lessons learned from the process?}}}}}}
+    ◊li{What are the lessons learned from the process?}}}}}
