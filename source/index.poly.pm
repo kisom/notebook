@@ -14,6 +14,19 @@ programming; it'll be more of a long-form thing.}}
   ◊ul{
     ◊li{◊(link "/computing/turing-machines.html" "Turing machines")}}}
 
+◊h3{Ideas}
+◊p{
+  ◊ul{
+
+    ◊li{◊(link "/ideas/hypervisor.html" "A hypervisor for the modern
+    age") (imported from my old notebook)}
+
+    ◊li{◊(link "/ideas/lisp-dcos.html" "Lisp DCOS") (imported from my
+    old notebook)}
+
+    ◊li{◊(link "/ideas/nebula.html" "A content-addressable data store
+    with object capabilities") (imported from my old notebook)}}}
+
 ◊h3{Process}
 ◊p{
   ◊ul{
