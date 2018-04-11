@@ -59,4 +59,6 @@ systems.}
     ◊li{Using Nebula/Irmin as a file store.}
     ◊li{How to securely share secrets?}
     ◊li{Logging?}
-    ◊li{Service discovery?}}}}
+    ◊li{Service discovery?}}}}}}
+
+◊p{Last updated on 2015-08-01.}

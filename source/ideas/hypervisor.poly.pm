@@ -152,3 +152,5 @@ means that isolation is broken◊numbered-note{One idea is to
 communicate to an environment that it is currently being debugged. The
 application can take the necessary steps to secure data or emit
 additional debugging information).}.}}
+
+◊p{Last updated on 2015-03-28.}
