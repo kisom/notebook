@@ -12,8 +12,13 @@ build:
 deploy:
 	rsync --progress -auv ./publish/ $(UPSTREAM)
 
+preview:
+	raco pollen start source
+
 setup:
-	raco pkg install --auto pollen libuuid
+	raco pkg install --auto --skip-installed pollen libuuid
 
 clean:
 	git clean -fxd
+
+.PHONY: all build clean deploy preview setup sync
