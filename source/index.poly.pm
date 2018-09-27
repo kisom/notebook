@@ -14,6 +14,11 @@ programming; it'll be more of a long-form thing.}}
   ◊ul{
     ◊li{◊(link "/computing/turing-machines.html" "Turing machines")}}}
 
+◊h3{Ghosts in the machine}
+◊p{
+  ◊ul{
+    ◊li{◊(link "/ghosts/geb.html" "Chapter notes from Gödel, Escher, Bach")}}}
+
 ◊h3{Ideas}
 ◊p{
   ◊ul{
