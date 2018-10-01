@@ -103,7 +103,6 @@ systems:}
 ◊h2{Chapter II: Meaning and Form in Mathematics}
 
 ◊p{◊newthought{What we’re looking for}
-
 is more than just a description of the axioms: not all grammatically
 correct forms are valid axioms, necessitating a test for
 axiomhood. Sometimes, a formal system will include ◊em{axiom schemas},
@@ -159,3 +158,30 @@ reason provides no alternative: if we agree that the step is
 reasonable, there’s no other outcome other than the conclusion. Such
 is the goal of mathematics: derivation of ironclad proofs of some
 non-obvious statement.}}
+
+
+◊section{
+
+◊h2{Chapter III: Figure and Ground}
+
+◊p{◊newthought{Our human nature}
+causes the natural tendency to blur the distinction between strings
+and their interpretation as we work in the I-mode. It’s somewhat akin
+to the artistic ideas of figure and ground: figure being the primary,
+foreground subject of an artwork and ground being the negative space
+that traditionally has been incidental to the figure. This leads to
+two types of figures: cursively-drawn figures, where the ground is an
+accidental by-product of the figure, and recursive figures, where the
+ground is a figure in its own right. From this, we see that there
+exist recognisable forms whose ground is not any kind of recognisable
+form - that is, that there are cursively-drawn figures that are not
+recursive.}
+
+◊p{Let’s consider figure and ground in the context of formal systems: the
+figure is comprised of the set of theorems in the formal system. There
+exist formal systems where the negative space (the non-theorems) is
+not the positive space (set of theorems) of any other formal
+system. That is, there exist recursively enumerable sets (the
+mathematical equivalent of cursively-drawn figures) that are not
+recursive. From this, it follows that there are formal systems for
+which there are no typographical decision procedures.}}
