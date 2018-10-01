@@ -133,4 +133,29 @@ words is called an interpretation - but note that this correspondence
 couldn’t be perceived without a prior choice of an interpretation of
 the symbols. Interpretation does not imply any meaning; there are
 meaningless interpretations devoid of isomorphic connections between
-theorems in the system and reality.}}
+theorems in the system and reality.}
+
+◊p{On a cautionary note, the symbols in a formal system will
+inevitably take on meaning once an isomorphism is found; this meaning
+must remain passive - we can’t create new theorems in the system by
+translating theorems from an isomorphic system.}
+
+◊p{There is some natural uncertainty as to whether our model of a
+formal system based on some part of mathematics is accurate - unless
+we have perfect information about the formal system and the domain of
+the interpretation, how can we know that theorems express truths? The
+answer lies in trusting the symbolic process where digits are treated
+as symbols and we have simple rules for manipulating them. It’s
+important to remember, however, that we often deal in “ideal” numbers
+that don’t actually reflect reality - for example, how do you count
+ideas? This requires an abstraction of the physical counting process.}
+
+◊p{Reasoning is the basis for our trust in mathematics: simple,
+beautiful, and compelling proofs. What makes the proof compelling is
+that even though each step in the process seems obvious, the end
+result isn’t - and we can’t check directly whether the end is true or
+not. Yet we are compelled to believe in this because acceptance of
+reason provides no alternative: if we agree that the step is
+reasonable, there’s no other outcome other than the conclusion. Such
+is the goal of mathematics: derivation of ironclad proofs of some
+non-obvious statement.}}
