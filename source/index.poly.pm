@@ -35,6 +35,7 @@ programming; it'll be more of a long-form thing.}}
 ◊h3{Process}
 ◊p{
   ◊ul{
+    ◊li{◊(link "/process/seven-deadly-sins.html" "Seven deadly sins")}
     ◊li{◊(link "/process/solving-problems.html" "Solving problems")}}}}
 
 ◊section{◊p{You might also be interested in the ◊(link "/colophon.html" "colophon").}}
