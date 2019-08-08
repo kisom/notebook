@@ -16,6 +16,13 @@
 
 (define (link url text) `(a [[href ,url]] ,text))
 
+(define ($ . xs)
+  `(mathjax ,(apply string-append `("$" ,@xs "$"))))
+(define ($$ . xs)
+  `(mathjax ,(apply string-append `("$$" ,@xs "$$"))))
+
+
+
 #|
 ◊numbered-note, ◊margin-figure, ◊margin-note:
   These three tag functions produce markup for "sidenotes" in HTML and LaTeX.

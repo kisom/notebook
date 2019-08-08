@@ -1,4 +1,4 @@
-UPSTREAM :=	haven.dropsonde.net:sites/notebook/
+UPSTREAM :=	phobos.wntrmute.net:/var/www/sites/notes/
 
 all: build
 
@@ -9,7 +9,7 @@ build:
 	mkdir -p publish
 	raco pollen publish source publish
 
-deploy:
+deploy: build
 	rsync --progress -auv ./publish/ $(UPSTREAM)
 
 preview:
