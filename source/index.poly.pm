@@ -35,7 +35,7 @@ programming; it'll be more of a long-form thing.}}
 ◊h3{Maths}
 ◊p{
   ◊ul{
-    ◊li{◊(link"/pim/index.hml" "Programmer's Introduction to Maths")}}}
+    ◊li{◊(link"/pim/index.html" "Programmer's Introduction to Maths")}}}
 
 ◊h3{Process}
 ◊p{

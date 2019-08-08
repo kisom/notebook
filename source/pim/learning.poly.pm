@@ -2,6 +2,7 @@
 
 ◊h1{Notes on learning math}
 
+◊section{
 ◊p{While reading the book, I use two highlighters: orange is for
 import math concepts, and blue is for meta concepts about ◊em{how
 to learn math} Here's some of those highlights.}
@@ -22,4 +23,17 @@ to learn math} Here's some of those highlights.}
         each definition before moving on.}
     ◊li{"Appeal to your inner voice, not your inner type-checker."}
   }
+}
+
+◊p{
+I've also been using ◊(link "https://brilliant.org/" "Brilliant")
+to work on my maths skills. Some lessons from this:}
+◊p{
+  ◊ul{
+    ◊li{Invest in building your intuition}
+    ◊li{Find quick strategies for organising your thoughts}
+    ◊li{Simplify the problem to approach the answer}
+  }
+}
+
 }

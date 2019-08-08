@@ -253,8 +253,6 @@ to the current HTTP/REST interface will also need to be devised.}}
     implementation.}
 
     ◊li{The ◊(link "https://github.com/kisom/nebula/" "current development") version
-	    has a RESTish API and is written in Clojure.}}}}}}
+	    has a RESTish API and is written in Clojure.}}}}
 
 ◊p{Last updated on 2015-03-30.}
-
-  
