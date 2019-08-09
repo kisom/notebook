@@ -1,7 +1,7 @@
 notebook
 ========
 
-This is my programmer's notebook. It's based on a collection of
+This is my programmer's notebook.
 
 It is generated using [Pollen](https://docs.racket-lang.org/pollen/)
 and uses the [Tufte CSS](https://edwardtufte.github.io/tufte-css/)
