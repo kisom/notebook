@@ -72,4 +72,19 @@ definition 3, ◊${\forall c \in C, c \in A}. Therefore ◊${C \subset A}.}
 ◊p{◊strong{Proof}: Let ◊${C = A \cup B = \{x : x \in A \lor x \in B\}}. By
 definition, ◊${C} contains every element in ◊${A} and therefore ◊${A \subset C}.}
 ◊p{◊${\square}}
+
+◊p{◊strong{Theorem 4a}: De Morgan's law for sets: ◊${(A \cap B)^C = A^C \cup B^C}.}
+
+◊p{◊strong{Proof}: ◊${A \cap B} contains only the elements of ◊${X} in
+both ◊${A} and ◊${B}. Therefore, ◊${(A \cap B)^C} contains only the elements
+of X that do not appear in both ◊${A} and ◊${B}. That is,
+◊$${(A \cap B)^C = \{x \in X: x \notin A \land x \notin B\}}
+
+◊${A^C} contains the elements of ◊${X} that don't appear in ◊${A}; similarly,
+◊${B^C} contains the elements of ◊${X} that don't appear in ◊${B}. Therefore,
+◊${A^C \cup B^C} contains the elements of ◊${X} that appear either in ◊${A},
+◊${B}, or neither. That is,
+◊$${A^C \cup B^C = \{x \in X: x \notin A \land x \notin B\}}
+These two definitions are equivalent, and therefore ◊${(A \cap B)^C = A^C \cup B^C}.}
+
 }
