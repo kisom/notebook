@@ -25,7 +25,7 @@ of those things.}}
     ◊li{Notifications}
     ◊li{Links - don't click them}
     ◊li{Ban scrum, etc...}
-    ◊li{One thing at a time}}
+    ◊li{One thing at a time}}}
 
 ◊section{◊p{◊strong{TODO:} port
 ◊(link "https://ai6ua.net/blog/2018/03/23/20180323-forgotten_ideas/" "this list")
