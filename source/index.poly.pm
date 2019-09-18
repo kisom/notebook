@@ -35,7 +35,13 @@ programming; it'll be more of a long-form thing.}}
 ◊h3{Maths}
 ◊p{
   ◊ul{
-    ◊li{◊(link"/pim/index.html" "Programmer's Introduction to Maths")}}}
+    ◊li{◊(link "/pim/index.html" "Programmer's Introduction to Maths")}}}
+
+◊h3{Miscellanea}
+◊p{
+  ◊ul{
+    ◊li{◊(link "/miscellanea/armstrong.html" "The Wisdom of Joe Armstrong")}
+    ◊li{◊(link "/miscellanea/naggum.html" "Re: PART TWO: winning industrial-use of lisp")}}}
 
 ◊h3{Process}
 ◊p{

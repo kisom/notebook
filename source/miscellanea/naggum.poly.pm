@@ -1,5 +1,12 @@
 #lang pollen
 
+◊h1{Erik Naggum's rant on Common Lisp}
+
+◊p{This is kind of a classic; I like the questions that are raised in
+general. While I definitely have a strong Common Lisp background, I'm
+not a fanatic, so I'm less concerned about the language than I am
+about the thoughts behind them.}
+
 ◊pre{
 Path: archiver1.google.com!news1.google.com!newsfeed.stanford.edu!news.tele.dk!small.news.tele.dk!195.86.7.162!newsfeed.wirehub.nl!newsfeed.wxs.nl!news2.kpn.net!news.kpn.net!nslave.kpnqwest.net!nnum.kpnqwest.net!EU.net!nreader1.kpnqwest.net.POSTED!not-for-mail
 Newsgroups: comp.lang.lisp
