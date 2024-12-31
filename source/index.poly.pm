@@ -42,6 +42,7 @@ programming; it'll be more of a long-form thing.}}
   ◊ul{
     ◊li{◊(link "/miscellanea/armstrong.html" "The Wisdom of Joe Armstrong")}
     ◊li{◊(link "/miscellanea/naggum.html" "Re: PART TWO: winning industrial-use of lisp")}}}
+    ◊li{◊(link "/miscellanea/hamming.html" "Hamming: You and Your Research")}}}
 
 ◊h3{Process}
 ◊p{

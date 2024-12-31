@@ -112,3 +112,10 @@
   (case (current-poly-target)
     [(ltx pdf) `(txt "\\begin{center}" ,@words "\\end{center}")]
     [else `(div [[style "text-align: center"]] ,@words)]))
+
+(define (image src #:width [width "100%"] #:height [height "100%"] #:border [border? #t])
+  (define img-tag (attr-set* '(img) 'style (format "width: ~a; height: ~a" width height)
+                             'src (build-path "/static/images" src)))
+  (if border?
+      (attr-set img-tag 'class "bordered")
+      img-tag))

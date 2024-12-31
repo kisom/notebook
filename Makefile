@@ -1,4 +1,4 @@
-UPSTREAM :=	phobos.wntrmute.net:/var/www/sites/notes/
+UPSTREAM :=	deimos.wntrmute.net:/var/www/sites/notes/
 
 all: build
 
